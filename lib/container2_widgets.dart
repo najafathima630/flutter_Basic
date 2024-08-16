@@ -16,8 +16,8 @@ class _Square_widgetState extends State<Square_widget> {
         child: Center(
           child: Container(
             height: 400,
-            width: 300,
-            color: Colors.white,
+            width: 400,
+            color: Colors.blue,child: Container(),
           ),
         ),
       ),
