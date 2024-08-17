@@ -17,7 +17,8 @@ class _TextbuttonWidgetsState extends State<TextbuttonWidgets> {
               onPressed: () {
                 print("hello");
               },
-              child: Text("Submit"))),
+              child: Text("Submit",style: TextStyle(color: Colors.red,fontSize: 40
+              ),))),
     );
   }
 }

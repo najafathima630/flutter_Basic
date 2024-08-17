@@ -11,7 +11,13 @@ class icons_widgets extends StatefulWidget {
 class _icons_widgetsState extends State<icons_widgets> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: 
-      Center(child: Icon(Icons.home,color: Colors.red,size: 400,)),);
+    return Scaffold(
+      body: Center(
+          child: Icon(
+        Icons.home_outlined,
+        color: Colors.red,
+        size: 400,
+      )),
+    );
   }
 }

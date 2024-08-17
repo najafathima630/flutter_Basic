@@ -28,7 +28,7 @@ class _ContainerWidgetsState extends State<ContainerWidgets> {
               color: Colors.black,
               borderRadius: BorderRadius.circular(500),
               border: Border.all(
-                  width: 4, style: BorderStyle.solid, color: Colors.red)),
+                  width: 4, style: BorderStyle.solid, color: Colors.yellow)),
         ),
       )),
     );

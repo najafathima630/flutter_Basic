@@ -15,7 +15,6 @@ class _Text_widgetsState extends State<Text_widgets> {
       body: Column(
         children: [
           Center(
-
               child: Text(
             "hello",
             // style: TextSty le(color: Colors.lightGreen,fontSize: 30,fontWeight:FontWeight.w300),
