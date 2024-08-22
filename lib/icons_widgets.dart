@@ -16,7 +16,7 @@ class _icons_widgetsState extends State<icons_widgets> {
           child: Icon(
         Icons.home_outlined,
         color: Colors.red,
-        size: 400,
+        size: 50,
       )),
     );
   }
