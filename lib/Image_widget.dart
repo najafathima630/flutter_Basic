@@ -51,7 +51,11 @@ class _ImageWidgetState extends State<ImageWidget> {
           ),
           Center(
               child: Container(
-            decoration: BoxDecoration(color: Colors.purple,image:DecorationImage(image: NetworkImage("https://stimg.cardekho.com/images/carexteriorimages/630x420/Renault/KWID/10076/1717586320303/front-left-side-47.jpg?impolicy=resize&imwidth=480"))),
+            decoration: BoxDecoration(
+                color: Colors.purple,
+                image: DecorationImage(
+                    image: NetworkImage(
+                        "https://stimg.cardekho.com/images/carexteriorimages/630x420/Renault/KWID/10076/1717586320303/front-left-side-47.jpg?impolicy=resize&imwidth=480"))),
             width: 300,
             height: 300,
           ))

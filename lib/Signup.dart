@@ -53,12 +53,23 @@ class _Task4State extends State<Task4> {
                   width: 40,
                 ),
                 Container(
-                  child: Center(
-                    child: Text(
-                      "Username",
-                      style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.normal),
-                    ),
+                  child: Row(
+                    children: [
+                      SizedBox(
+                        height: 20,
+                        width: 20,
+                      ),
+                      Icon(Icons.person),
+                      SizedBox(
+                        width: 10,
+                        height: 10,
+                      ),
+                      Text(
+                        "Username",
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      )
+                    ],
                   ),
                   decoration: BoxDecoration(
                       color: Colors.grey,
@@ -87,12 +98,23 @@ class _Task4State extends State<Task4> {
                   width: 40,
                 ),
                 Container(
-                  child: Center(
-                    child: Text(
-                      "Email",
-                      style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.normal),
-                    ),
+                  child: Row(
+                    children: [
+                      SizedBox(
+                        height: 20,
+                        width: 20,
+                      ),
+                      Icon(Icons.email),
+                      SizedBox(
+                        height: 10,
+                        width: 10,
+                      ),
+                      Text(
+                        "Email",
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      )
+                    ],
                   ),
                   decoration: BoxDecoration(
                       color: Colors.grey,
@@ -121,6 +143,24 @@ class _Task4State extends State<Task4> {
                   width: 40,
                 ),
                 Container(
+                  child: Row(
+                    children: [
+                      SizedBox(
+                        height: 20,
+                        width: 20,
+                      ),
+                      Icon(Icons.password),
+                      SizedBox(
+                        width: 10,
+                        height: 10,
+                      ),
+                      Text(
+                        "password",
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.w900),
+                      )
+                    ],
+                  ),
                   decoration: BoxDecoration(
                       color: Colors.grey,
                       borderRadius: BorderRadius.circular(20)),
@@ -148,6 +188,24 @@ class _Task4State extends State<Task4> {
                   width: 40,
                 ),
                 Container(
+                  child: Row(
+                    children: [
+                      SizedBox(
+                        height: 20,
+                        width: 20,
+                      ),
+                      Icon(Icons.password),
+                      SizedBox(
+                        width: 10,
+                        height: 10,
+                      ),
+                      Text(
+                        "confirmpassword",
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold),
+                      )
+                    ],
+                  ),
                   decoration: BoxDecoration(
                       color: Colors.grey,
                       borderRadius: BorderRadius.circular(20)),
@@ -169,6 +227,15 @@ class _Task4State extends State<Task4> {
                       width: 40,
                     ),
                     Container(
+                      child: Center(
+                        child: Text(
+                          "Sign up",
+                          style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
+                        ),
+                      ),
                       decoration: BoxDecoration(
                           color: Colors.purple,
                           borderRadius: BorderRadius.circular(40)),
@@ -215,6 +282,13 @@ class _Task4State extends State<Task4> {
                   width: 40,
                 ),
                 Container(
+                  child: Center(
+                    child: Text(
+                      "Sign in with Google",
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold, color: Colors.purple,fontSize: 20),
+                    ),
+                  ),
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(40),
                       border: Border.all(color: Colors.pink, width: 2)),
@@ -241,18 +315,18 @@ class _Task4State extends State<Task4> {
                   child: Text(
                     "Already have an account?",
                     style: TextStyle(
-                        color: Colors.purple,
+                        color: Colors.black,
                         fontSize: 20,
-                        fontWeight: FontWeight.w500),
+                        fontWeight: FontWeight.w900),
                   ),
                 ),
                 Center(
                   child: Text(
                     "Login",
                     style: TextStyle(
-                        color: Colors.black,
+                        color: Colors.purple,
                         fontSize: 20,
-                        fontWeight: FontWeight.w500),
+                        fontWeight: FontWeight.w900),
                   ),
                 ),
                 SizedBox(

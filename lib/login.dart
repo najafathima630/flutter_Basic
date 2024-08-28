@@ -24,7 +24,7 @@ class Task3State extends State<Task3> {
               style: TextStyle(
                 color: Colors.black,
                 fontSize: 50,
-                fontWeight: FontWeight.w900,
+                fontWeight: FontWeight.bold,
               ),
             ),
           ),
@@ -57,10 +57,10 @@ class Task3State extends State<Task3> {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Row(
-                        children: [
+                        children: [SizedBox(height: 10,width: 10,),
                           Icon(
-                            Icons.person,
-                          ),
+                            Icons.person,size: 30,
+                          ),SizedBox(width: 10,height: 10,),
                           Text(
                             "Username",
                             style: TextStyle(
@@ -95,12 +95,12 @@ class Task3State extends State<Task3> {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Row(
-                        children: [
+                        children: [SizedBox(width: 10,height: 10,),
                           Icon(
                             Icons.password,
                             color: Colors.black,size: 30,
 
-                          ),
+                          ),SizedBox(height: 10,width: 10,),
                           Text(
                             "password",
                             style: TextStyle(
@@ -134,7 +134,7 @@ class Task3State extends State<Task3> {
                           child: Text(
                             "Login",
                             style: TextStyle(
-                                fontSize: 20, fontWeight: FontWeight.w500),
+                                fontSize: 20, fontWeight: FontWeight.w900),
                           ),
                         ),
                         decoration: BoxDecoration(
