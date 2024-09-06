@@ -11,8 +11,8 @@ class FooduiWidgets extends StatefulWidget {
 class _FooduiWidgetsState extends State<FooduiWidgets> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
+    return Scaffold(backgroundColor: Colors.white,
+      body:ListView(
         children: [
           SizedBox(
             height: 45,

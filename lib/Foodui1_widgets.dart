@@ -12,7 +12,7 @@ class _Foodui1WidgetsState extends State<Foodui1Widgets> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
+      body: ListView(
         children: [
           SizedBox(
             height: 40,
@@ -174,7 +174,8 @@ class _Foodui1WidgetsState extends State<Foodui1Widgets> {
                     decoration: BoxDecoration(
                         color: Colors.black,
                         image: DecorationImage(
-                            image: AssetImage("Assets/download7.jpg"))),
+                            image: AssetImage("Assets/download (1).jpg"),
+                            fit: BoxFit.cover)),
                     height: 150,
                     width: 150,
                   ),
@@ -187,7 +188,8 @@ class _Foodui1WidgetsState extends State<Foodui1Widgets> {
                         decoration: BoxDecoration(
                             color: Colors.black,
                             image: DecorationImage(
-                                image: AssetImage("Assets/download7.jpg"))),
+                                image: AssetImage("Assets/download7.jpg"),
+                                fit: BoxFit.cover)),
                         width: 150,
                         height: 150,
                       ),
@@ -285,7 +287,7 @@ class _Foodui1WidgetsState extends State<Foodui1Widgets> {
                             child: Text(
                               "+",
                               style: TextStyle(
-                                  fontSize: 20,
+                                  fontSize: 30,
                                   color: Colors.red,
                                   fontWeight: FontWeight.bold),
                             ),
@@ -319,10 +321,12 @@ class _Foodui1WidgetsState extends State<Foodui1Widgets> {
                       SizedBox(
                         width: 30,
                       ),
-                      Container( decoration: BoxDecoration(
-                          color: Colors.black,
-                          image: DecorationImage(
-                              image: AssetImage("Assets/download7.jpg"))),
+                      Container(
+                        decoration: BoxDecoration(
+                            color: Colors.black,
+                            image: DecorationImage(
+                                image: AssetImage("Assets/download.jpg"),
+                                fit: BoxFit.cover)),
                         width: 150,
                         height: 150,
                       ),
@@ -335,11 +339,42 @@ class _Foodui1WidgetsState extends State<Foodui1Widgets> {
                             decoration: BoxDecoration(
                                 color: Colors.black,
                                 image: DecorationImage(
-                                    image: AssetImage("Assets/download7.jpg"))),
+                                    image:
+                                        AssetImage("Assets/download (2).jpg"),
+                                    fit: BoxFit.cover)),
                             width: 150,
                             height: 150,
                           ),
                         ],
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        child: Row(
+                          children: [
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Icon(Icons.shopping_cart),
+                            SizedBox(
+                              width: 100,
+                            ),
+                            Icon(Icons.home),
+                            SizedBox(
+                              width: 100,
+                            ),
+                            Icon(Icons.heart_broken),
+                            SizedBox(
+                              width: 70,
+                            ),
+                            Icon(Icons.notifications_active_outlined),
+                          ],
+                        ),
+                        width: 400,
+                        height: 90,
+                        color: Colors.pink,
                       ),
                     ],
                   )

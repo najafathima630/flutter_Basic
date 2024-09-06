@@ -14,12 +14,20 @@ class _NavigateWidgetsState extends State<NavigateWidgets> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(mainAxisAlignment: MainAxisAlignment.center,
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text("page1"),
-          ElevatedButton(onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) {
-            return Navigate2Widgets();
-          },));}, child: Text("Navigat to 2"),),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(
+                builder: (context) {
+                  return Navigate2Widgets();
+                },
+              ));
+            },
+            child: Text("Navigat to 2"),
+          ),
         ],
       ),
     );

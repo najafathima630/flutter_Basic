@@ -11,8 +11,8 @@ class Food2Widgets extends StatefulWidget {
 class _Food2WidgetsState extends State<Food2Widgets> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
+    return Scaffold(backgroundColor: Colors.white,
+      body: ListView(
         children: [
           Row(
             children: [
@@ -149,7 +149,7 @@ class _Food2WidgetsState extends State<Food2Widgets> {
                               Container(
                                 child: Icon(
                                   Icons.star,
-                                  color: Colors.yellowAccent,
+                                  color: Colors.orange,
                                 ),
                               ),
                               SizedBox(
@@ -158,7 +158,8 @@ class _Food2WidgetsState extends State<Food2Widgets> {
                               Container(
                                 child: Icon(
                                   Icons.star,
-                                  color: Colors.yellowAccent,
+                                  color: Colors.
+                                  orange,
                                 ),
                               ),
                               SizedBox(
@@ -167,7 +168,7 @@ class _Food2WidgetsState extends State<Food2Widgets> {
                               Container(
                                 child: Icon(
                                   Icons.star,
-                                  color: Colors.yellowAccent,
+                                  color: Colors.orange,
                                 ),
                               ),
                               SizedBox(
@@ -176,7 +177,7 @@ class _Food2WidgetsState extends State<Food2Widgets> {
                               Container(
                                 child: Icon(
                                   Icons.star,
-                                  color: Colors.yellowAccent,
+                                  color: Colors.orange,
                                 ),
                               ),
                               SizedBox(
@@ -185,7 +186,7 @@ class _Food2WidgetsState extends State<Food2Widgets> {
                               Container(
                                 child: Icon(
                                   Icons.star,
-                                  color: Colors.yellowAccent,
+                                  color: Colors.orange,
                                 ),
                               )
                             ],
@@ -237,7 +238,7 @@ class _Food2WidgetsState extends State<Food2Widgets> {
                                     color: Colors.orangeAccent,
                                     image: DecorationImage(
                                         image:
-                                            AssetImage("Assets/download.jpg"),
+                                            AssetImage("Assets/download (3).jpg"),
                                         fit: BoxFit.cover)),
                                 height: 60,
                                 width: 60,

@@ -12,7 +12,7 @@ class _FitnessWidgetsState extends State<FitnessWidgets> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
+      body: ListView(
         children: [
           SizedBox(
             height: 50,
@@ -26,8 +26,10 @@ class _FitnessWidgetsState extends State<FitnessWidgets> {
                     width: 300,
                     child: Text(
                       "Fitness           you wanna             Have",
-                      style:
-                          TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                          fontSize: 40,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.deepPurple),
                     ),
                   ),
                 )
@@ -36,57 +38,68 @@ class _FitnessWidgetsState extends State<FitnessWidgets> {
           ),
           Container(
             decoration: BoxDecoration(
-                color: Colors.black,
+                color: Colors.white,
                 image: DecorationImage(
-                    image: AssetImage("Assets/images6.jpg"),
+                    image: AssetImage("Assets/images36.jpg"),
                     fit: BoxFit.cover)),
             width: 300,
             height: 300,
           ),
-          Text(
-            "  Please Login",
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 40),
+          Container(
+            child: Text(
+              "  Please Login",
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 40,
+                  color: Colors.deepPurple),
+            ),
           ),
           SizedBox(
             height: 30,
           ),
-          TextFormField(
-            decoration: InputDecoration(
-                border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(
-                  10,
-                )),
-                prefixIconColor: Colors.pink,
-                suffixIconColor: Colors.white,
-                hintText: "Username or gmail.com",
-                filled: true,
-                prefixIcon: Icon(Icons.email)),
-            obscureText: true,
+          Padding(
+            padding: const EdgeInsets.only(right: 50, left: 50),
+            child: TextFormField(
+              decoration: InputDecoration(
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(
+                    20,
+                  )),
+                  prefixIconColor: Colors.pink,
+                  suffixIconColor: Colors.white,
+                  hintText: "Username or gmail.com",
+                  filled: true,
+                  prefixIcon: Icon(Icons.email)),
+              obscureText: true,
+            ),
           ),
           SizedBox(
             height: 20,
           ),
-          TextFormField(
-            decoration: InputDecoration(
-                border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(
-                  10,
-                )),
-                prefixIconColor: Colors.pink,
-                suffixIconColor: Colors.white,
-                hintText: "..........",
-                filled: true,
-                prefixIcon: Icon(Icons.lock),
-                suffixIcon: Icon(
-                  Icons.remove_red_eye,
-                  color: Colors.black,
-                )),
-            obscureText: true,
+          Padding(
+            padding: const EdgeInsets.only(left: 50, right: 50),
+            child: TextFormField(
+              decoration: InputDecoration(
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(
+                    20,
+                  )),
+                  prefixIconColor: Colors.pink,
+                  suffixIconColor: Colors.white,
+                  hintText: "..........",
+                  filled: true,
+                  prefixIcon: Icon(Icons.lock),
+                  suffixIcon: Icon(
+                    Icons.remove_red_eye,
+                    color: Colors.black,
+                  )),
+              obscureText: true,
+            ),
           ),
           Row(
             children: [
               SizedBox(
-                width: 10,
+                width: 40,
                 height: 40,
               ),
               Text(
@@ -94,15 +107,18 @@ class _FitnessWidgetsState extends State<FitnessWidgets> {
                 style: TextStyle(color: Colors.black),
               ),
               Row(
-                children: [SizedBox(width: 130,),
+                children: [
+                  SizedBox(
+                    width: 150,
+                  ),
                   Text(
                     "Create acount",
                     style: TextStyle(color: Colors.black),
                   )
                 ],
-              )
+              ),
             ],
-          )
+          ),
         ],
       ),
     );
